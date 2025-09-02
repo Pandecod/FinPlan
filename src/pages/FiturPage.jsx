@@ -309,10 +309,10 @@ export default function FiturPage() {
       {/* HERO */}
       <section id="hero" className="mt-20 bg-gradient-to-r from-blue-50 to-indigo-50 py-12">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
-          <div className="flex-1">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800">Atur uangmu, capai targetmu</h1>
-            <p className="mt-3 text-gray-600">Mulai dari budgeting, target nabung, sampai kalkulator keuangan sederhana, semua ada di sini.</p>
-            <div className="mt-6 flex gap-3">
+          <div className="flex-1 ">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 animate__animated animate__fadeInUp animate__delay-1s">Atur uangmu, capai targetmu</h1>
+            <p className="mt-3 text-gray-600 animate__animated animate__fadeInUp animate__delay-2s">Mulai dari budgeting, target nabung, sampai kalkulator keuangan sederhana, semua ada di sini.</p>
+            <div className="mt-6 flex gap-3 animate__animated animate__fadeInUp animate__delay-3s">
               <button onClick={() => setActive('budgeting')} className="px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition">
                 Lihat Materi
               </button>
@@ -320,7 +320,7 @@ export default function FiturPage() {
           </div>
           <div className="flex-1">
             {/* Illustrative box */}
-            <div className=" rounded-2xl p-6 ">
+            <div className=" rounded-2xl p-6 animate__animated animate__fadeInUp animate__delay-2s">
               <img src={heroImg} alt="Ilustrasi keuangan" className="w-full h-64 md:h-full object-cover md:object-contain md:scale-110 md:translate-x-6" />
             </div>
           </div>
@@ -329,24 +329,46 @@ export default function FiturPage() {
 
       {/* FITUR GRID */}
       <section id="fitur-grid" className="max-w-6xl mx-auto px-6 py-12">
-        <h2 className="text-2xl font-semibold mb-4">Fitur Utama</h2>
-        <p className="text-gray-600 mb-6">Jelajahi fitur di bawah ini dan temukan manfaatnya untuk Anda.</p>
+        <h2 className="text-2xl font-semibold mb-4" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          Fitur Utama
+        </h2>
+        <p className="text-gray-600 mb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          Jelajahi fitur di bawah ini dan temukan manfaatnya untuk Anda.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Feature buttons */}
-          <button onClick={() => setActive('budgeting')} className={`bg-white p-6 rounded-2xl shadow hover:shadow-lg text-left transition ${active === 'budgeting' ? 'ring-2 ring-blue-400' : ''}`}>
+          <button
+            onClick={() => setActive('budgeting')}
+            className={`bg-white p-6 rounded-2xl shadow hover:shadow-lg text-left transition ${active === 'budgeting' ? 'ring-2 ring-blue-400' : ''}`}
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-once="true"
+          >
             <div className="text-4xl mb-2">💰</div>
             <div className="text-lg font-semibold">Budgeting</div>
             <div className="text-sm text-gray-500 mt-1">Catat pemasukan & pengeluaran</div>
           </button>
 
-          <button onClick={() => setActive('target')} className={`bg-white p-6 rounded-2xl shadow hover:shadow-lg text-left transition ${active === 'target' ? 'ring-2 ring-blue-400' : ''}`}>
+          <button
+            onClick={() => setActive('target')}
+            className={`bg-white p-6 rounded-2xl shadow hover:shadow-lg text-left transition ${active === 'target' ? 'ring-2 ring-blue-400' : ''}`}
+            data-aos="fade-up"
+            data-aos-duration="4000"
+            data-aos-once="true"
+          >
             <div className="text-4xl mb-2">🎯</div>
             <div className="text-lg font-semibold">Target Nabung</div>
             <div className="text-sm text-gray-500 mt-1">Buat target & lihat progres</div>
           </button>
 
-          <button onClick={() => setActive('kalkulator')} className={`bg-white p-6 rounded-2xl shadow hover:shadow-lg text-left transition ${active === 'kalkulator' ? 'ring-2 ring-blue-400' : ''}`}>
+          <button
+            onClick={() => setActive('kalkulator')}
+            className={`bg-white p-6 rounded-2xl shadow hover:shadow-lg text-left transition ${active === 'kalkulator' ? 'ring-2 ring-blue-400' : ''}`}
+            data-aos="fade-up"
+            data-aos-duration="6000"
+            data-aos-once="true"
+          >
             <div className="text-4xl mb-2">🧮</div>
             <div className="text-lg font-semibold">Kalkulator</div>
             <div className="text-sm text-gray-500 mt-1">Bunga majemuk & simulasi kartu kredit</div>
@@ -356,7 +378,11 @@ export default function FiturPage() {
         {/* Content area */}
         <div className="mt-8">
           <div className="bg-white rounded-2xl shadow p-6 min-h-[220px]">
-            {!active && <p className="text-gray-500 text-center">Pilih fitur di atas untuk mulai mencoba.</p>}
+            {!active && (
+              <p className="text-gray-500 text-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+                Pilih fitur di atas untuk mulai mencoba.
+              </p>
+            )}
 
             {active === 'budgeting' && renderBudgeting()}
             {active === 'target' && renderTarget()}

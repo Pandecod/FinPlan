@@ -21,14 +21,16 @@ const Why = () => {
     <section className="bg-gradient-to-b from-blue-50 to-white py-20 px-6">
       {/* Judul Section */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 " data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
           Kenapa <span className="underline underline-offset-4 decoration-blue-500 font-light">Penting?</span>
         </h1>
-        <p className="mt-4 text-gray-600 text-base sm:text-lg">Banyak orang menghadapi masalah finansial sehari-hari. Inilah beberapa alasan kenapa literasi keuangan itu penting untuk dipahami sejak dini.</p>
+        <p className="mt-4 text-gray-600 text-base sm:text-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          Banyak orang menghadapi masalah finansial sehari-hari. Inilah beberapa alasan kenapa literasi keuangan itu penting untuk dipahami sejak dini.
+        </p>
       </div>
 
       {/* Card Container */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         {items.map((item, index) => (
           <div
             key={index}

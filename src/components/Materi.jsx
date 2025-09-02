@@ -21,13 +21,15 @@ const Materi = () => {
 
   return (
     <div className="container mx-auto   px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden" id="Materi">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center text-gray-800">
+      <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-center text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
         Materi <span className="underline underline-offset-4 decoration-blue-500 font-light">Belajar</span>
       </h1>
-      <p className="text-center text-gray-600 mb-8 max-w-80 mx-auto">Pelajari materi keuangan secara bertahap</p>
+      <p className="text-center text-gray-600 mb-8 max-w-80 mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+        Pelajari materi keuangan secara bertahap
+      </p>
 
       {/* slider buttons */}
-      <div className="flex justify-end items-center mb-8">
+      <div className="flex justify-end items-center mb-8" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
         <button onClick={prevMateri} className="p-3 bg-white border border-gray-200 rounded shadow-sm hover:bg-blue-50 hover:text-blue-600 transition-colors" aria-label="Previous Materi">
           &larr;
         </button>

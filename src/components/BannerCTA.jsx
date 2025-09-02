@@ -5,7 +5,7 @@ import heroImg from '../assets/hero2.png';
 const BannerCTA = ({}) => {
   return (
     <section className="px-4">
-      <div className="relative mx-auto max-w-6xl rounded-3xl bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 text-white shadow-xl overflow-hidden">
+      <div className="relative mx-auto max-w-6xl rounded-3xl bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 text-white shadow-xl overflow-hidden" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
         {/* Overlay Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.06),transparent_40%)]" />
 

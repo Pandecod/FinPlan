@@ -18,15 +18,17 @@ const Testimonials = () => {
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden py-16 bg-gray-50">
       {/* Judul section */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-800" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
           Belajar
           <span className="underline underline-offset-4 decoration-blue-500 font-light"> Finansial</span>
         </h1>
-        <p className="text-gray-600 mt-3">Lihat bagaimana orang-orang mengatur keuangan mereka untuk mencapai tujuan finansial.</p>
+        <p className="text-gray-600 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+          Lihat bagaimana orang-orang mengatur keuangan mereka untuk mencapai tujuan finansial.
+        </p>
       </div>
 
       {/* Row 1 (bergerak ke kanan) */}
-      <VelocityScroll defaultVelocity={3} numRows={1} className="max-w-full mb-6">
+      <VelocityScroll defaultVelocity={3} numRows={1} className="max-w-full mb-6" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
         {testimonials.map((t) => (
           <div key={t.id} className="inline-flex mx-3 w-72 max-w-xs bg-white p-6 rounded-xl shadow-lg text-black flex-col justify-between hover:shadow-2xl transition-shadow duration-300">
             {/* Text edukasi finansial */}

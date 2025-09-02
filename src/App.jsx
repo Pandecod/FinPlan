@@ -9,6 +9,10 @@ import Belajar from './pages/Belajar';
 import DetailArtikel from './pages/DetailArtikel';
 import NotFound from './pages/NotFound';
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 const App = () => {
   return (

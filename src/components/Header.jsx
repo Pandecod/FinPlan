@@ -6,31 +6,31 @@ export default function Header() {
       {/* Headline + Subheadline */}
       <div className="relative mt-16 flex items-center justify-center min-h-screen  overflow-hidden">
         <div className="text-center max-w-xl z-10">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeIn">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInUp animate__delay-1s">
             Atur Uangmu, <br /> Capai Tujuanmu 🚀
           </h1>
-          <p className="text-gray-600 mb-6">Mulai dari budgeting, target nabung, sampai belajar keuangan dasar. Gratis, mudah, dan aman.</p>
+          <p className="text-gray-600 mb-6 animate__animated animate__fadeInUp animate__delay-2s">Mulai dari budgeting, target nabung, sampai belajar keuangan dasar. Gratis, mudah, dan aman.</p>
           <div className="flex justify-center gap-4">
             <Link to="/belajar">
-              <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-xl shadow-md hover:bg-blue-700 transition">Pelajari Sekarang</button>
+              <button className="px-6 py-3 bg-blue-600 text-white font-medium rounded-xl shadow-md hover:bg-blue-700 transition animate__animated animate__fadeInUp animate__delay-2s">Pelajari Sekarang</button>
             </Link>
           </div>
         </div>
 
         {/* Card Features */}
-        <div className=" z-10 absolute top-16 left-3  md:left-48  rotate-[-6deg]">
+        <div className=" z-10 absolute top-16 left-3  md:left-48  rotate-[-6deg] animate__animated animate__fadeInLeft animate__delay-1s">
           <Card icon={<Wallet className="w-6 h-6 text-blue-600" />} title="Budgeting" />
         </div>
 
-        <div className="absolute top-16 right-3 right-3 md:right-48 rotate-[6deg]">
+        <div className="absolute top-16 right-3 right-3 md:right-48 rotate-[6deg] animate__animated animate__fadeInRight animate__delay-1s">
           <Card icon={<PiggyBank className="w-6 h-6 text-green-600" />} title="Target Nabung" />
         </div>
 
-        <div className="absolute bottom-16 left-3 md:left-48 rotate-[6deg]">
+        <div className="absolute bottom-16 left-3 md:left-48 rotate-[6deg] animate__animated animate__fadeInLeft animate__delay-2s">
           <Card icon={<Calculator className="w-6 h-6 text-purple-600" />} title="Kalkulator" />
         </div>
 
-        <div className="absolute bottom-16 right-3 md:right-48 rotate-[-6deg]">
+        <div className="absolute bottom-16 right-3 md:right-48 rotate-[-6deg] animate__animated animate__fadeInRight animate__delay-2s">
           <Card icon={<BookOpen className="w-6 h-6 text-orange-600" />} title="Belajar" />
         </div>
       </div>
